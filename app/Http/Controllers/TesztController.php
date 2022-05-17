@@ -18,7 +18,7 @@ class TesztController extends Controller
 
     public function expand()
     {
-        $tasks=Teszt::with('kategoria')->get();
+        $teszt=Teszt::with('kategoria')->get();
         return $teszt;
     }
 
